@@ -1,0 +1,493 @@
+Loading EGANet model with ConvNeXt backbone...
+Model loaded successfully!
+Backbone type: ConvNeXtBackbone
+
+================================================================================
+NETWORK PARAMETERS TABLE (Similar to Paper)
+================================================================================
+================================================================================
+ENCODER - ConvNeXt Backbone Analysis
+================================================================================
+Total Encoder Parameters: 27,818,592 (27.82M)
+
+ConvNeXt Backbone Structure:
+  stage1.0                       | Conv2d          |    4,704 |   0.00M
+  stage1.1                       | LayerNorm2d     |      192 |   0.00M
+  stage2.0.block.0               | Conv2d          |    4,800 |   0.00M
+  stage2.0.block.2               | LayerNorm       |      192 |   0.00M
+  stage2.0.block.3               | Linear          |   37,248 |   0.04M
+  stage2.0.block.5               | Linear          |   36,960 |   0.04M
+  stage2.1.block.0               | Conv2d          |    4,800 |   0.00M
+  stage2.1.block.2               | LayerNorm       |      192 |   0.00M
+  stage2.1.block.3               | Linear          |   37,248 |   0.04M
+  stage2.1.block.5               | Linear          |   36,960 |   0.04M
+  stage2.2.block.0               | Conv2d          |    4,800 |   0.00M
+  stage2.2.block.2               | LayerNorm       |      192 |   0.00M
+  stage2.2.block.3               | Linear          |   37,248 |   0.04M
+  stage2.2.block.5               | Linear          |   36,960 |   0.04M
+  stage3.0.0                     | LayerNorm2d     |      192 |   0.00M
+  stage3.0.1                     | Conv2d          |   73,920 |   0.07M
+  stage3.1.0.block.0             | Conv2d          |    9,600 |   0.01M
+  stage3.1.0.block.2             | LayerNorm       |      384 |   0.00M
+  stage3.1.0.block.3             | Linear          |  148,224 |   0.15M
+  stage3.1.0.block.5             | Linear          |  147,648 |   0.15M
+  stage3.1.1.block.0             | Conv2d          |    9,600 |   0.01M
+  stage3.1.1.block.2             | LayerNorm       |      384 |   0.00M
+  stage3.1.1.block.3             | Linear          |  148,224 |   0.15M
+  stage3.1.1.block.5             | Linear          |  147,648 |   0.15M
+  stage3.1.2.block.0             | Conv2d          |    9,600 |   0.01M
+  stage3.1.2.block.2             | LayerNorm       |      384 |   0.00M
+  stage3.1.2.block.3             | Linear          |  148,224 |   0.15M
+  stage3.1.2.block.5             | Linear          |  147,648 |   0.15M
+  stage4.0.0                     | LayerNorm2d     |      384 |   0.00M
+  stage4.0.1                     | Conv2d          |  295,296 |   0.30M
+  stage4.1.0.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.0.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.0.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.0.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.1.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.1.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.1.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.1.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.2.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.2.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.2.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.2.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.3.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.3.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.3.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.3.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.4.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.4.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.4.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.4.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.5.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.5.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.5.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.5.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.6.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.6.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.6.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.6.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.7.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.7.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.7.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.7.block.5             | Linear          |  590,208 |   0.59M
+  stage4.1.8.block.0             | Conv2d          |   19,200 |   0.02M
+  stage4.1.8.block.2             | LayerNorm       |      768 |   0.00M
+  stage4.1.8.block.3             | Linear          |  591,360 |   0.59M
+  stage4.1.8.block.5             | Linear          |  590,208 |   0.59M
+  stage5.0.0                     | LayerNorm2d     |      768 |   0.00M
+  stage5.0.1                     | Conv2d          | 1,180,416 |   1.18M
+  stage5.1.0.block.0             | Conv2d          |   38,400 |   0.04M
+  stage5.1.0.block.2             | LayerNorm       |    1,536 |   0.00M
+  stage5.1.0.block.3             | Linear          | 2,362,368 |   2.36M
+  stage5.1.0.block.5             | Linear          | 2,360,064 |   2.36M
+  stage5.1.1.block.0             | Conv2d          |   38,400 |   0.04M
+  stage5.1.1.block.2             | LayerNorm       |    1,536 |   0.00M
+  stage5.1.1.block.3             | Linear          | 2,362,368 |   2.36M
+  stage5.1.1.block.5             | Linear          | 2,360,064 |   2.36M
+  stage5.1.2.block.0             | Conv2d          |   38,400 |   0.04M
+  stage5.1.2.block.2             | LayerNorm       |    1,536 |   0.00M
+  stage5.1.2.block.3             | Linear          | 2,362,368 |   2.36M
+  stage5.1.2.block.5             | Linear          | 2,360,064 |   2.36M
+================================================================================
+DECODER - Analysis
+================================================================================
+x5_dem_1             | Sequential      |  3,540,480 |     3.54M
+x4_dem_1             | Sequential      |    885,504 |     0.89M
+x3_dem_1             | Sequential      |    221,568 |     0.22M
+x2_dem_1             | Sequential      |     55,488 |     0.06M
+up5                  | Sequential      |  3,409,920 |     3.41M
+up4                  | Up              |  2,821,120 |     2.82M
+up3                  | Up              |    706,048 |     0.71M
+up2                  | Up              |    176,896 |     0.18M
+up1                  | Up              |    135,808 |     0.14M
+out5                 | Out             |    590,337 |     0.59M
+out4                 | Out             |    147,713 |     0.15M
+out3                 | Out             |     36,993 |     0.04M
+out2                 | Out             |      9,281 |     0.01M
+out1                 | Out             |      9,281 |     0.01M
+out_boundary5        | Out             |    590,337 |     0.59M
+out_boundary4        | Out             |    147,713 |     0.15M
+out_boundary3        | Out             |     36,993 |     0.04M
+out_boundary2        | Out             |      9,281 |     0.01M
+out_boundary1        | Out             |      9,281 |     0.01M
+ega1                 | EGA             |    112,042 |     0.11M
+ega2                 | EGA             |    112,042 |     0.11M
+ega3                 | EGA             |    446,190 |     0.45M
+ega4                 | EGA             |  1,781,110 |     1.78M
+pat_att1             | PatternAttention |     37,740 |     0.04M
+pat_att2             | PatternAttention |     37,740 |     0.04M
+pat_att3             | PatternAttention |    150,128 |     0.15M
+pat_att4             | PatternAttention |    599,160 |     0.60M
+fusion_conv1         | Conv2d          |      8,256 |     0.01M
+fusion_conv2         | Conv2d          |      8,256 |     0.01M
+fusion_conv3         | Conv2d          |     32,896 |     0.03M
+fusion_conv4         | Conv2d          |    131,328 |     0.13M
+gabor_layer          | GaborConv       |          0 |     0.00M
+feature_fusion_conv  | Conv2d          |          6 |     0.00M
+final_up             | FinalUpBlock    |     95,362 |     0.10M
+--------------------------------------------------------------------------------
+Total Decoder        |                 | 17,092,298 |    17.09M
+
+================================================================================
+SUMMARY TABLE
+================================================================================
+Component            |      Parameters |   Percentage
+--------------------------------------------------------------------------------
+Encoder (ConvNeXt)   |      27,818,592 |       61.9%
+Decoder              |      17,092,298 |       38.1%
+--------------------------------------------------------------------------------
+Total                |      44,910,890 |      100.0%
+
+================================================================================
+DETAILED MODULE BREAKDOWN
+================================================================================
+ENCODER:
+  ConvNeXt Backbone: 27,818,592 (27.82M)
+
+DECODER:
+  DEM Layers:       4,703,040 (4.70M)
+  Up Layers:        7,249,792 (7.25M)
+  Output Layers:    1,587,210 (1.59M)
+  EGA Modules:      2,451,384 (2.45M)
+  Pattern Attention:  824,768 (0.82M)
+  Fusion Layers:      180,742 (0.18M)
+  Other Modules:            0 (0.00M)
+
+====================================================================================================
+TABLE III - NETWORK PARAMETERS OF EACH MODULE
+NOTE: BasicConv2d and Conv2d with parameters [IN CHANNEL, OUT CHANNEL, KERNEL SIZE, PADDING]
+====================================================================================================
+
+ENCODER - ConvNeXt Backbone:
+--------------------------------------------------
+ConvNeXt Configuration:
+  Model Type: ConvNeXtBackbone
+  embed_dims: [96, 192, 384, 768]
+  num_heads: [1, 2, 5, 8]
+  mlp_ratios: [8, 8, 4, 4]
+  depths: [3, 4, 18, 3]
+  sr_ratios: [8, 4, 2, 1]
+  drop_rate: 0
+  drop_path_rate: 0.1
+
+ConvNeXt Detailed Modules:
+  stage1.0                                 | Conv2d [3,96,4,0]
+  stage1.1                                 | LayerNorm [96]
+  stage2.0.block.0                         | Conv2d [96,96,7,3]
+  stage2.0.block.2                         | LayerNorm [96]
+  stage2.0.block.3                         | Linear [96,384]
+  stage2.0.block.4                         | GELU
+  stage2.0.block.5                         | Linear [384,96]
+  stage2.1.block.0                         | Conv2d [96,96,7,3]
+  stage2.1.block.2                         | LayerNorm [96]
+  stage2.1.block.3                         | Linear [96,384]
+  stage2.1.block.4                         | GELU
+  stage2.1.block.5                         | Linear [384,96]
+  stage2.2.block.0                         | Conv2d [96,96,7,3]
+  stage2.2.block.2                         | LayerNorm [96]
+  stage2.2.block.3                         | Linear [96,384]
+  stage2.2.block.4                         | GELU
+  stage2.2.block.5                         | Linear [384,96]
+  stage3.0.0                               | LayerNorm [96]
+  stage3.0.1                               | Conv2d [96,192,2,0]
+  stage3.1.0.block.0                       | Conv2d [192,192,7,3]
+  stage3.1.0.block.2                       | LayerNorm [192]
+  stage3.1.0.block.3                       | Linear [192,768]
+  stage3.1.0.block.4                       | GELU
+  stage3.1.0.block.5                       | Linear [768,192]
+  stage3.1.1.block.0                       | Conv2d [192,192,7,3]
+  stage3.1.1.block.2                       | LayerNorm [192]
+  stage3.1.1.block.3                       | Linear [192,768]
+  stage3.1.1.block.4                       | GELU
+  stage3.1.1.block.5                       | Linear [768,192]
+  stage3.1.2.block.0                       | Conv2d [192,192,7,3]
+  stage3.1.2.block.2                       | LayerNorm [192]
+  stage3.1.2.block.3                       | Linear [192,768]
+  stage3.1.2.block.4                       | GELU
+  stage3.1.2.block.5                       | Linear [768,192]
+  stage4.0.0                               | LayerNorm [192]
+  stage4.0.1                               | Conv2d [192,384,2,0]
+  stage4.1.0.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.0.block.2                       | LayerNorm [384]
+  stage4.1.0.block.3                       | Linear [384,1536]
+  stage4.1.0.block.4                       | GELU
+  stage4.1.0.block.5                       | Linear [1536,384]
+  stage4.1.1.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.1.block.2                       | LayerNorm [384]
+  stage4.1.1.block.3                       | Linear [384,1536]
+  stage4.1.1.block.4                       | GELU
+  stage4.1.1.block.5                       | Linear [1536,384]
+  stage4.1.2.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.2.block.2                       | LayerNorm [384]
+  stage4.1.2.block.3                       | Linear [384,1536]
+  stage4.1.2.block.4                       | GELU
+  stage4.1.2.block.5                       | Linear [1536,384]
+  stage4.1.3.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.3.block.2                       | LayerNorm [384]
+  stage4.1.3.block.3                       | Linear [384,1536]
+  stage4.1.3.block.4                       | GELU
+  stage4.1.3.block.5                       | Linear [1536,384]
+  stage4.1.4.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.4.block.2                       | LayerNorm [384]
+  stage4.1.4.block.3                       | Linear [384,1536]
+  stage4.1.4.block.4                       | GELU
+  stage4.1.4.block.5                       | Linear [1536,384]
+  stage4.1.5.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.5.block.2                       | LayerNorm [384]
+  stage4.1.5.block.3                       | Linear [384,1536]
+  stage4.1.5.block.4                       | GELU
+  stage4.1.5.block.5                       | Linear [1536,384]
+  stage4.1.6.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.6.block.2                       | LayerNorm [384]
+  stage4.1.6.block.3                       | Linear [384,1536]
+  stage4.1.6.block.4                       | GELU
+  stage4.1.6.block.5                       | Linear [1536,384]
+  stage4.1.7.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.7.block.2                       | LayerNorm [384]
+  stage4.1.7.block.3                       | Linear [384,1536]
+  stage4.1.7.block.4                       | GELU
+  stage4.1.7.block.5                       | Linear [1536,384]
+  stage4.1.8.block.0                       | Conv2d [384,384,7,3]
+  stage4.1.8.block.2                       | LayerNorm [384]
+  stage4.1.8.block.3                       | Linear [384,1536]
+  stage4.1.8.block.4                       | GELU
+  stage4.1.8.block.5                       | Linear [1536,384]
+  stage5.0.0                               | LayerNorm [384]
+  stage5.0.1                               | Conv2d [384,768,2,0]
+  stage5.1.0.block.0                       | Conv2d [768,768,7,3]
+  stage5.1.0.block.2                       | LayerNorm [768]
+  stage5.1.0.block.3                       | Linear [768,3072]
+  stage5.1.0.block.4                       | GELU
+  stage5.1.0.block.5                       | Linear [3072,768]
+  stage5.1.1.block.0                       | Conv2d [768,768,7,3]
+  stage5.1.1.block.2                       | LayerNorm [768]
+  stage5.1.1.block.3                       | Linear [768,3072]
+  stage5.1.1.block.4                       | GELU
+  stage5.1.1.block.5                       | Linear [3072,768]
+  stage5.1.2.block.0                       | Conv2d [768,768,7,3]
+  stage5.1.2.block.2                       | LayerNorm [768]
+  stage5.1.2.block.3                       | Linear [768,3072]
+  stage5.1.2.block.4                       | GELU
+  stage5.1.2.block.5                       | Linear [3072,768]
+
+====================================================================================================
+DECODER - EGANet Modules:
+====================================================================================================
+
+DEM (Dimension Enhancement Modules):
+
+x5_dem_1:
+  Conv2d [768,512,3,1]
+  BatchNorm2d [512]
+  ReLU [inplace=True]
+
+x4_dem_1:
+  Conv2d [384,256,3,1]
+  BatchNorm2d [256]
+  ReLU [inplace=True]
+
+x3_dem_1:
+  Conv2d [192,128,3,1]
+  BatchNorm2d [128]
+  ReLU [inplace=True]
+
+x2_dem_1:
+  Conv2d [96,64,3,1]
+  BatchNorm2d [64]
+  ReLU [inplace=True]
+
+Up Modules:
+
+up5:
+  Conv
+  ConvTranspose2d
+
+up4:
+  ResidualConv:
+    BatchNorm2d [768]
+    ReLU [inplace=True]
+    Conv2d [768,256,3,1]
+    BatchNorm2d [256]
+    ReLU [inplace=True]
+    Conv2d [256,256,3,1]
+    Shortcut Conv2d [768,256,1,0]
+  ConvTranspose2d [256,256,2,2]
+
+up3:
+  ResidualConv:
+    BatchNorm2d [384]
+    ReLU [inplace=True]
+    Conv2d [384,128,3,1]
+    BatchNorm2d [128]
+    ReLU [inplace=True]
+    Conv2d [128,128,3,1]
+    Shortcut Conv2d [384,128,1,0]
+  ConvTranspose2d [128,128,2,2]
+
+up2:
+  ResidualConv:
+    BatchNorm2d [192]
+    ReLU [inplace=True]
+    Conv2d [192,64,3,1]
+    BatchNorm2d [64]
+    ReLU [inplace=True]
+    Conv2d [64,64,3,1]
+    Shortcut Conv2d [192,64,1,0]
+  ConvTranspose2d [64,64,2,2]
+
+up1:
+  ResidualConv:
+    BatchNorm2d [128]
+    ReLU [inplace=True]
+    Conv2d [128,64,3,1]
+    BatchNorm2d [64]
+    ReLU [inplace=True]
+    Conv2d [64,64,3,1]
+    Shortcut Conv2d [128,64,1,0]
+  ConvTranspose2d [64,64,2,2]
+
+EGA (Edge-Guided Attention) Modules:
+
+ega1:
+  fusion_conv:
+    Conv2d [192,64,3,1]
+    BatchNorm2d [64]
+    ReLU [inplace=True]
+  attention:
+    Conv2d [64,1,3,1]
+    BatchNorm2d [1]
+    Sigmoid
+  cbam: CBAM
+
+ega2:
+  fusion_conv:
+    Conv2d [192,64,3,1]
+    BatchNorm2d [64]
+    ReLU [inplace=True]
+  attention:
+    Conv2d [64,1,3,1]
+    BatchNorm2d [1]
+    Sigmoid
+  cbam: CBAM
+
+ega3:
+  fusion_conv:
+    Conv2d [384,128,3,1]
+    BatchNorm2d [128]
+    ReLU [inplace=True]
+  attention:
+    Conv2d [128,1,3,1]
+    BatchNorm2d [1]
+    Sigmoid
+  cbam: CBAM
+
+ega4:
+  fusion_conv:
+    Conv2d [768,256,3,1]
+    BatchNorm2d [256]
+    ReLU [inplace=True]
+  attention:
+    Conv2d [256,1,3,1]
+    BatchNorm2d [1]
+    Sigmoid
+  cbam: CBAM
+
+Pattern Attention Modules:
+
+pat_att1:
+  gabor_channel_reducer: Conv2d [4,1,1,0]
+  pattern_conv:
+    Conv2d [64,64,3,1]
+    BatchNorm2d [64]
+    ReLU [inplace=True]
+  cbam: CBAM
+
+pat_att2:
+  gabor_channel_reducer: Conv2d [4,1,1,0]
+  pattern_conv:
+    Conv2d [64,64,3,1]
+    BatchNorm2d [64]
+    ReLU [inplace=True]
+  cbam: CBAM
+
+pat_att3:
+  gabor_channel_reducer: Conv2d [4,1,1,0]
+  pattern_conv:
+    Conv2d [128,128,3,1]
+    BatchNorm2d [128]
+    ReLU [inplace=True]
+  cbam: CBAM
+
+pat_att4:
+  gabor_channel_reducer: Conv2d [4,1,1,0]
+  pattern_conv:
+    Conv2d [256,256,3,1]
+    BatchNorm2d [256]
+    ReLU [inplace=True]
+  cbam: CBAM
+
+Fusion Modules:
+  fusion_conv1         | Conv2d [128,64,1,0]
+  fusion_conv2         | Conv2d [128,64,1,0]
+  fusion_conv3         | Conv2d [256,128,1,0]
+  fusion_conv4         | Conv2d [512,256,1,0]
+
+Output Modules:
+
+out1:
+  conv2: Conv2d [16,1,1,0]
+
+out2:
+  conv2: Conv2d [16,1,1,0]
+
+out3:
+  conv2: Conv2d [32,1,1,0]
+
+out4:
+  conv2: Conv2d [64,1,1,0]
+
+out5:
+  conv2: Conv2d [128,1,1,0]
+
+Boundary Output Modules:
+
+out_boundary1:
+  conv2: Conv2d [16,1,1,0]
+
+out_boundary2:
+  conv2: Conv2d [16,1,1,0]
+
+out_boundary3:
+  conv2: Conv2d [32,1,1,0]
+
+out_boundary4:
+  conv2: Conv2d [64,1,1,0]
+
+out_boundary5:
+  conv2: Conv2d [128,1,1,0]
+
+Special Modules:
+
+gabor_layer:
+  GaborConv [n_filters=4]
+
+feature_fusion_conv:
+  Conv2d [5,1,1,0]
+
+================================================================================
+MEMORY AND COMPUTATIONAL ANALYSIS
+================================================================================
+Model Size: 171.3 MB
+Total Parameters: 44,910,890
+Trainable Parameters: 44,910,890
+Input Shape: [1, 3, 352, 352]
+Output Shapes: [[1, 1, 352, 352], [1, 1, 176, 176], [1, 1, 88, 88], [1, 1, 44, 44], [1, 1, 22, 22]]
+
+================================================================================
+ANALYSIS COMPLETE
+================================================================================
+
+Analiz tamamlandı! Çıktılar 'analysis_log_20250922_210628.txt' dosyasına kaydedildi.
