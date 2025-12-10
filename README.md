@@ -1,8 +1,8 @@
 # TriaNet: A Tri-Fusion Attention Network for Segmenting Polyps with Ambiguous Boundaries
 
 ![First](images/first.png)
-![Methods 1](images/methods1.png)
 ![Table](images/table.png)
+![Methods 1](images/methods1.png)
 ![Results](images/results.png)
 ![Methods 2](images/methods2.png)
 
