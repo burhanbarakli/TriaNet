@@ -2,9 +2,10 @@
 
 ![First](images/first.png)
 ![Methods 1](images/methods1.png)
-![Methods 2](images/methods2.png)
-![Results](images/results.png)
 ![Table](images/table.png)
+![Results](images/results.png)
+![Methods 2](images/methods2.png)
+
 
 ## Overview
 
