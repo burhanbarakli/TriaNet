@@ -40,3 +40,6 @@ python take_results.py
 
 ## Citation
 If you use this work in your research, please cite our paper.
+
+## Acknowledgement
+We would like to thank [MEGANet](https://github.com/UARK-AICV/MEGANet) for their code implementations, which were helpful in this work.
